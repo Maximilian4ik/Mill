@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <!-- <script defer src="https://code.jquery.com/jquery-3.7.0.min.js"></script> -->
+    <script src="js/slick.min.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
+      type="text/javascript"
+    ></script>
+    <script defer src="js/script.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header-wrap">
+            <div class="logo-block">
+              <img src="img/logo.png" class="logo-img" alt="Logo" />
+              <span class="logo-lext">Курьерская доставка по России</span>
+            </div>
+            <nav class="header-nav">
+              <ul class="header-ul">
+                <li class="header-li">
+                  <a href="#" class="header-link">О КОМПАНИИ</a>
+                </li>
+                <li class="header-li">
+                  <a href="#" class="header-link">ПРАВИЛА ПОЛУЧЕНИЯ</a>
+                </li>
+                <li class="header-li">
+                  <a href="#" class="header-link">КОНТАКТЫ</a>
+                </li>
+              </ul>
+            </nav>
+            <button class="header-button button">ОТСЛЕДИТЬ ПОСЫЛКУ</button>
+            <div class="menu-burger" id="menu-burger">
+              <span></span>
+            </div>
+          </div>
+        </div>
+        <div class="mob-menu">
+          <p>Меню</p>
+          <ul>
+            <li><a class="header-link" href="#">О КОМПАНИИ</a></li>
+            <li><a class="header-link" href="#">ПРАВИЛА ПОЛУЧЕНИЯ</a></li>
+            <li><a class="header-link" href="#">КОНТАКТЫ</a></li>
+          </ul>
+          <button class="header-button mob-header-btn button">
+            Отследить посылку
+          </button>
+        </div>
+      </header>
+      <main class="main">
+        <div class="container">
+          <div class="track-wrap">
+            <div class="track-top loaded">
+              <div class="main-block-track loaded mblock track">
+                
+              </div>
+              <div class="track-route mblock loaded">
+             
+              </div>
+            </div>
+            <div class="track-main mblock loaded">
+              <img src="img/track-loaded.png" alt="">
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-wrapper">
+            <img class="footer-logo" src="img/footer-logo.png" alt="" />
+            <div class="footer-nav social-networks hidden">
+              <span> Социальные сети: </span>
+              <ul>
+                <li>
+                  <a href="#" class="vk-link">
+                    <img src="img/vk.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#" class="tg-link"
+                    ><img src="img/tg.svg" alt=""
+                  /></a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-block">
+              <div class="footer-nav menu">
+                <span> Меню: </span>
+                <ul>
+                  <li><a href="#">О компании</a></li>
+                  <li><a href="#">Правила получения</a></li>
+                  <li><a href="#">Оплата</a></li>
+                  <li><a href="#">Возврат</a></li>
+                  <li><a href="#">Контакты</a></li>
+                </ul>
+              </div>
+              <div class="footer-nav contacts">
+                <span> Контакты: </span>
+                <ul>
+                  <li>
+                    <a href="tel:+79146774031">Телефон: +7 (914) 677-40-31</a>
+                  </li>
+                  <li>
+                    <a href="mailto:help@milelog.ru">Почта: help@milelog.ru</a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Адрес: 690065, Приморский край, <br />
+                      г. Владивосток, ул. Леонова, д. 99А, офис 14
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="footer-nav social-networks vis">
+              <!-- <img src="img/Frame 49.png" alt="" /> -->
+              <span> Социальные сети: </span>
+              <ul>
+                <li>
+                  <a href="#" class="vk-link">
+                    <img src="img/vk.svg" alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="tg-link">
+                    <img src="img/tg.svg" alt="" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>ООО "МИЛЬ"</p>
+            <p>Политика конфиденциальности</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/suggestions-jquery@22.6.0/dist/js/jquery.suggestions.min.js"></script>
+    <script>
+      //
+      $("input[name='adrf'], input[name='adrt']").suggestions({
+        //
+        token: "d863761a5c28221f37a42fb2bc3aa57687dd9f05",
+        type: "ADDRESS",
+
+        //
+        onSelect: function (answ) {
+          //
+          console.log(answ);
+        },
+      });
+    </script>
+    <link rel="stylesheet" href="css/style.css" />
+  </body>
+</html>

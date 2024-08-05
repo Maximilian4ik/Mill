@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header-wrap">
+            <div class="logo-block">
+              <img src="img/logo.png" class="logo-img" alt="Logo" />
+              <span class="logo-lext">Курьерская доставка по России</span>
+            </div>
+            <nav class="header-nav">
+              <ul class="header-ul">
+                <li class="header-li">
+                  <a href="#" class="header-link">О КОМПАНИИ</a>
+                </li>
+                <li class="header-li">
+                  <a href="#" class="header-link">ПРАВИЛА ПОЛУЧЕНИЯ</a>
+                </li>
+                <li class="header-li">
+                  <a href="#" class="header-link">КОНТАКТЫ</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header-buttons">
+              <button class="header-button button" data-fancybox href="#hidden">
+                ОТСЛЕДИТЬ ПОСЫЛКУ
+              </button>
+              <div class="header-button button log-btn">Войти</div>
+            </div>
+
+            <div class="menu-burger" id="menu-burger">
+              <span></span>
+            </div>
+          </div>
+        </div>
+        <div class="mob-menu">
+          <p>Меню</p>
+          <ul>
+            <li><a class="header-link" href="#">О КОМПАНИИ</a></li>
+            <li><a class="header-link" href="#">ПРАВИЛА ПОЛУЧЕНИЯ</a></li>
+            <li><a class="header-link" href="#">КОНТАКТЫ</a></li>
+          </ul>
+          <button class="header-button mob-header-btn button">
+            Отследить посылку
+          </button>
+          <div class="header-button mob-header-btn button log-btn">Войти</div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="main-block">
+          <div class="container">
+            <div class="main-block-wrapp">
+              <div class="main-block-form">
+                <div class="main-block-delivery mblock">
+                  <p>Рассчитать доставку</p>
+                  <form class="del-form" action="#">
+                    <div class="field">
+                      <input
+                        name="adrf"
+                        type="text"
+                        placeholder="Город отправки"
+                        style="
+                          position: relative;
+                          z-index: 22;
+                          background: rgb(254, 254, 255);
+                        "
+                      />
+                    </div>
+                    <div class="field">
+                      <input
+                        class="m-input"
+                        name="adrf"
+                        type="text"
+                        placeholder="Город назначения"
+                        style="
+                          position: relative;
+                          z-index: 22;
+                          background: rgb(254, 254, 255);
+                        "
+                      />
+                    </div>
+                  </form>
+                  <div class="main-block-buttons">
+                    <button class="main-price">ОТ 130 РУБЛЕЙ ЗА КГ</button>
+                    <button
+                      class="button main-block-button"
+                      type="submit"
+                      data-fancybox
+                      href="#hidden1"
+                    >
+                      РАССЧИТАТЬ ДОСТАВКУ
+                    </button>
+                  </div>
+                </div>
+                <div class="main-block-form-bottom">
+                  <div class="main-block-track mblock">
+                    <p>Отследить посылку</p>
+                    <div class="track-num">
+                      <input type="tel" placeholder="Введите трек номер" />
+                      <button class="gps-btn button">
+                        <img src="img/gps.svg" alt="" />
+                      </button>
+                    </div>
+                  </div>
+                  <button
+                    data-fancybox
+                    href="#hidden2"
+                    class="button present-btn"
+                  >
+                    <span>Забери свой подарок!</span>
+                    <img src="img/gift.png" alt="" />
+                  </button>
+                </div>
+              </div>
+              <div class="main-slider main-block-cashback">
+                <img
+                  class="main-slider-slide"
+                  src="img/mile_main screen_300_450х420.jpg"
+                  alt=""
+                />
+                <img
+                  class="main-slider-slide"
+                  src="img/mile_main screen_300_450х420.jpg"
+                  alt=""
+                />
+              </div>
+              <!-- <img
+                class="main-block-cashback"
+                src="img/mile_main screen_300_450х420.jpg"
+                alt=""
+              /> -->
+            </div>
+          </div>
+        </div>
+        <div class="about">
+          <div class="container">
+            <div class="mblock about-wrapper">
+              <h4 class="title">Полностью онлайн. Всегда рядом</h4>
+              <div class="about-info">
+                <div>
+                  <div class="home">
+                    <h6>Нет отделений и очередей</h6>
+                    <p>
+                      Управлять своими посылками можно через через наш сайт.
+                      Доставка курьером от двери до двери.
+                    </p>
+                  </div>
+                  <div class="phone">
+                    <h6>Всегда на связи</h6>
+                    <p>
+                      Отвечаем на звонки и сообщения круглосуточно. Даже утром
+                      первого января, для нас вы главный подарок.
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <div class="help">
+                    <h6>Помогаем сразу</h6>
+                    <p>
+                      Почти все проблемы решаются уже при первом обращении.
+                      Помочь вам, наша основная цель.
+                    </p>
+                  </div>
+                  <div class="time">
+                    <h6>Доставим быстро</h6>
+                    <p>
+                      Посылку доставляем в самые короткие сроки без доплаты за
+                      срочность доставки.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal" style="display: none; width: 100%" id="hidden">
+          <div class="logo-block mod-logo">
+            <img src="img/logo.png" class="logo-img" alt="Logo" />
+            <span class="logo-lext">Курьерская доставка по России</span>
+          </div>
+          <div class="tab-menu">
+            <button class="tab-button active" data-tab="tab1">Войти</button>
+            <button class="tab-button" data-tab="tab2">
+              Зарегистрироваться
+            </button>
+          </div>
+          <div class="modal-form log active" id="tab1">
+            <span>Телефон</span>
+            <input type="tel" placeholder="Введите номер телефона" />
+            <span>Пароль</span>
+            <input type="password" placeholder="Введите пароль" />
+            <div class="checkboxs">
+              <input type="checkbox" id="log-policy" />
+              <label for="log-policy">
+                Я прочитал(а) и соглашаюсь с <a>правилами сайта</a>
+              </label>
+              <br />
+              <input type="checkbox" id="log-policy" />
+              <label for="#log-policy">
+                Принимаю <a>Политику конфиденциальности</a>
+              </label>
+            </div>
+            <button class="button">ВОЙТИ</button>
+          </div>
+          <div class="modal-form reg" id="tab2">
+            <span>Телефон</span>
+            <input type="tel" placeholder="Введите номер телефона" />
+            <span>Почта</span>
+            <input type="tel" placeholder="Введите  почту" />
+            <span>Пароль</span>
+            <input type="password" placeholder="Введите пароль" />
+            <div class="checkboxs">
+              <input type="checkbox" id="log-policy" />
+              <label for="log-policy">
+                Я прочитал(а) и соглашаюсь с <b>правилами сайта</b>
+              </label>
+              <br />
+              <input type="checkbox" id="log-policy" />
+              <label for="#log-policy">
+                Принимаю <b>Политику конфиденциальности</b>
+              </label>
+            </div>
+            <button class="button">Зарегистрироваться</button>
+          </div>
+        </div>
+        <div class="modal" style="display: none; width: 100%" id="hidden1">
+          <div class="logo-block mod-logo">
+            <img src="img/logo.png" class="logo-img" alt="Logo" />
+            <span class="logo-lext">Курьерская доставка по России</span>
+          </div>
+          <div class="tab-menu">
+            <button class="tab-button" data-tab="tab1">Войти</button>
+            <button class="tab-button active" data-tab="tab2">
+              Зарегистрироваться
+            </button>
+          </div>
+
+          <form action="#" class="code-form">
+            <input type="text" maxlength="1" class="sms-code-input" />
+            <input type="text" maxlength="1" class="sms-code-input" />
+            <input type="text" maxlength="1" class="sms-code-input" />
+            <input type="text" maxlength="1" class="sms-code-input" />
+          </form>
+          <button class="button">Зарегистрироваться</button>
+        </div>
+        <div class="modal" style="display: none; width: 100%" id="hidden2">
+          <div class="logo-block mod-logo">
+            <img src="img/logo.png" class="logo-img" alt="Logo" />
+            <span class="logo-lext">Курьерская доставка по России</span>
+          </div>
+          <div class="tab-menu">
+            <button class="tab-button" data-tab="tab1">Войти</button>
+            <button class="tab-button active" data-tab="tab2">
+              Зарегистрироваться
+            </button>
+          </div>
+          <img class="modal-img" src="img/modal-img.png" alt="" />
+          <button class="button">Зарегистрироваться</button>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-wrapper">
+            <img class="footer-logo" src="img/footer-logo.png" alt="" />
+            <div class="footer-nav social-networks hidden">
+              <span> Социальные сети: </span>
+              <ul>
+                <li>
+                  <a href="#" class="vk-link"
+                    ><img src="img/vk.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#" class="tg-link"
+                    ><img src="img/tg.svg" alt=""
+                  /></a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-block">
+              <div class="footer-nav menu">
+                <span> Меню: </span>
+                <ul>
+                  <li><a href="#">О компании</a></li>
+                  <li><a href="#">Правила получения</a></li>
+                  <li><a href="#">Оплата</a></li>
+                  <li><a href="#">Возврат</a></li>
+                  <li><a href="#">Контакты</a></li>
+                </ul>
+              </div>
+              <div class="footer-nav contacts">
+                <span> Контакты: </span>
+                <ul>
+                  <li>
+                    <a href="tel:+79146774031">Телефон: +7 (914) 677-40-31</a>
+                  </li>
+                  <li>
+                    <a href="mailto:help@milelog.ru">Почта: help@milelog.ru</a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Адрес: 690065, Приморский край, <br />
+                      г. Владивосток, ул. Леонова, д. 99А, офис 14
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="footer-nav social-networks vis">
+              <!-- <img src="img/Frame 49.png" alt="" /> -->
+              <span> Социальные сети: </span>
+              <ul>
+                <li>
+                  <a href="#" class="vk-link">
+                    <img src="img/vk.svg" alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="tg-link">
+                    <img src="img/tg.svg" alt="" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>ООО "МИЛЬ"</p>
+            <p>Политика конфиденциальности</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/suggestions-jquery@22.6.0/dist/js/jquery.suggestions.min.js"></script>
+    <script>
+      //
+      $("input[name='adrf'], input[name='adrt']").suggestions({
+        //
+        token: "d863761a5c28221f37a42fb2bc3aa57687dd9f05",
+        type: "ADDRESS",
+
+        //
+        onSelect: function (answ) {
+          //
+          console.log(answ);
+        },
+      });
+    </script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
